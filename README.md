@@ -12,11 +12,7 @@ A dynamic, browser-based IRR calculator built using vanilla HTML, CSS (Bootstrap
 - ✅ **Form Validation** and friendly error messages for incorrect inputs.
 - 🎨 Clean, responsive design with Bootstrap 5.
 
----
 
-## 📷 Demo
-
-![Demo Screenshot](https://user-images.githubusercontent.com/your-github-username/demo-image.png) <!-- Replace with actual screenshot -->
 
 ---
 
