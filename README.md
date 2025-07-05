@@ -69,7 +69,8 @@ A dynamic, browser-based IRR calculator built using vanilla HTML, CSS (Bootstrap
 
 **Kaushal Ravin**  
 - [GitHub](https://github.com/kaushalravin)
-- [LinkedIn]([https://www.linkedin.com/in/your-link](https://www.linkedin.com/in/kaushal-n-904519326))
+- [LinkedIn](https://www.linkedin.com/in/kaushal-n-904519326)
+
 
 ---
 
