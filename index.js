@@ -43,28 +43,28 @@ function generateDiv(e) {
   primaryBtn.disabled = true;
   document.querySelector("#compute").addEventListener("click", computeData);
 
-  // Attach pre-populate logic
+
   document.querySelectorAll(".pre-populate").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       const year = btn.getAttribute("data-year");
 
-      // Prevent duplicates
+
       if (document.querySelector(`#popup-${year}`)) return;
 
-      // Remove any other popup if open
+
       const openPopup = document.querySelector(".input-group");
       if (openPopup) openPopup.remove();
 
-      // Insert mini-form using Bootstrap input group
       btn.insertAdjacentHTML("afterend", `
-        <div class="input-group input-group-sm mt-2 mb-2 " id="popup-${year}">
-          <input type="number" min="${year}" class="form-control" id="end-year-${year}" placeholder="Fill up to year...">
-          <button type="button" class="btn btn-outline-success submit-populate" data-source="${year}">Submit</button>
+        <div class="input-group input-group-sm mt-2 mb-2" id="popup-${year}">
+            <input type="number" min="${year}" class="form-control" id="end-year-${year}" placeholder="Fill up to year...">
+            <button type="button" class="btn btn-outline-success submit-populate" data-source="${year}">Submit</button>
         </div>
       `);
 
-      // Handle the submit-populate button click
+
+
       document.querySelector(`#popup-${year} .submit-populate`).addEventListener("click", () => {
         const sourceYear = Number(year);
         const endYear = Number(document.querySelector(`#end-year-${year}`).value);
@@ -87,7 +87,7 @@ function generateDiv(e) {
           }
         }
 
-        // Remove popup after success
+
         document.querySelector(`#popup-${year}`).remove();
       });
     });
